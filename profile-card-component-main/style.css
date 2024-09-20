@@ -1,0 +1,136 @@
+/* Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%) */
+
+
+/* ### Neutral
+
+Dark gray: hsl(0, 0%, 59%) */
+
+
+/* ### Body Copy
+
+- Font size (name and stats): 18px */
+
+/* ### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{
+    font-size: 1.125em;
+    font-family: Kumbh, Sans, sans-serif;
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding:0;
+}
+:root{
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(185, 75%, 39%);
+    width:100%;
+    max-width: 1440px;
+    overflow: hidden;
+}
+.cover {
+    position: absolute;
+}
+.top {
+    top:-500px;
+    left:-350px;
+}
+.bottom{
+    bottom: -650px;
+    right:-300px
+}
+@media (max-width:1080px) {
+    .top {
+        left: -600px
+    }
+    .bottom {
+        right: -500px;
+    }
+}
+@media (max-width: 500px) {
+    .top {
+        left:-750px;
+    }
+    .bottom {
+        right:-650px;
+    }
+}
+.container {
+    justify-content: center;
+    display: inline-block;
+    border-radius: 1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+}
+.container {
+    box-shadow: hsla(229, 23%, 23%, 0.3) 0px 7px 29px 0px;;
+}
+.img-card {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    border-radius: 50% ;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+}
+.profile {
+    border-radius: 50%;
+}
+.name {
+    margin-top: 4rem;
+}
+.name > span {
+    padding-left: 0.4rem;
+}
+.place {
+    margin:0.7rem 0 0.7rem 0;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    font-size: 0.85em;
+}
+p{
+    font-weight: 700;
+}
+span {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.bottom-component{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid hsl(0, 0%, 59%) ;
+    padding:1.3rem 1rem 1.3rem 1rem;
+}
+.bottom-component > p > span {
+    display: block;
+    font-size: 0.65em;
+    margin-top: 0.3rem;
+}
+
+ 
+
+
