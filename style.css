@@ -121,6 +121,7 @@ span{
     background-color: #fff;
     z-index: 2;
     border-radius: 1rem;
+    box-shadow: hsl(227, 10%, 46%) 0px 7px 29px 0px;;
     overflow: hidden;
 }
 .top-component{
