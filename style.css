@@ -36,101 +36,73 @@ Dark gray: hsl(0, 0%, 59%) */
 }
 body {
     background-color: hsl(185, 75%, 39%);
-    width:100%;
-    max-width: 1440px;
+}
+.wrapper{
+    width: 100%;
+    height:100vh;
     overflow: hidden;
-}
-.cover {
-    position: absolute;
-}
-.top {
-    top:-500px;
-    left:-350px;
-}
-.bottom{
-    bottom: -650px;
-    right:-300px
-}
-@media (max-width:1080px) {
-    .top {
-        left: -600px
-    }
-    .bottom {
-        right: -500px;
-    }
-}
-@media (max-width: 500px) {
-    .top {
-        left:-750px;
-    }
-    .bottom {
-        right:-650px;
-    }
-}
-.container {
-    justify-content: center;
-    display: inline-block;
-    border-radius: 1rem;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    text-align: center;
-}
-.container {
-    box-shadow: hsla(229, 23%, 23%, 0.3) 0px 7px 29px 0px;;
-}
-.img-card {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -55%);
-    border-radius: 50% ;
-    overflow: hidden;
-    width: 110px;
-    height: 110px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.cover{
+    position: absolute;
+    width:120%;
+    z-index: 1;
+}
+.top {
+    left:-240px;
+    top:-230px;
+} 
+.bottom{
+    bottom: -250px ;
+    right: -260px;
+}
+.container{
     background-color: #fff;
-
+    z-index: 2;
+    border-radius: 1rem;
+    overflow: hidden;
 }
-.profile {
+.top-component{
+    position: relative;
+    text-align: center;
+}
+.img-card{
+    position: absolute;
     border-radius: 50%;
+    background-color: #fff;
+    height: 100px;
+    width:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    top:85px;
+    left:0px;
+    right:0;
 }
-.name {
-    margin-top: 4rem;
+.profile{
+    border-radius: 50%;
+    width:90px;
+    height: 90px;
 }
-.name > span {
-    padding-left: 0.4rem;
+.name{
+    margin:4rem 0 .8rem 0;
 }
-.place {
-    margin:0.7rem 0 0.7rem 0;
-    font-weight: 400;
-    color: hsl(0, 0%, 59%);
-    font-size: 0.85em;
-}
-p{
-    font-weight: 700;
-}
-span {
-    font-weight: 400;
-    color: hsl(0, 0%, 59%);
+.place{
+    margin:1rem 0 1rem 0;
 }
 .bottom-component{
     display: flex;
     justify-content: space-around;
-    border-top: 1px solid hsl(0, 0%, 59%) ;
-    padding:1.3rem 1rem 1.3rem 1rem;
 }
-.bottom-component > p > span {
+.bottom-component > p  > span{
     display: block;
-    font-size: 0.65em;
-    margin-top: 0.3rem;
 }
+
+
 
  
-
 
